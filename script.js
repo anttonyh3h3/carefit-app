@@ -1,0 +1,3 @@
+function calculateBMI(params) {
+  init;
+}
