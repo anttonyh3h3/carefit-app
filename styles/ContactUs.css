@@ -6,16 +6,16 @@
 }
 
 .section{
-  padding: 40px 15%;
+  padding: auto;
 }
 
 .contact{
-  background: #101010;
+  background: grey;
   height: 100%;
   width: 100%;
   min-height: 100vh;
   grid-template-columns: repeat(2, 2fr);
-  display: grid;
+  display: flex;
   align-items: center;
   grid-gap: 6rem;
 }
