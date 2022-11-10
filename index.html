@@ -19,6 +19,9 @@
       transition: 0.5 ease;
       z-index: 2;
       position: absolute;
+      background-image: url(assets/img/aaaa.jpg);
+      background-size: cover;
+      background-attachment: fixed;
     }
     .container {
       z-index: 100;
@@ -33,14 +36,14 @@
     }
     .box {
       min-width: 400px;
-      background-color: transparent;
+      background-color: rgba(0, 0, 0, 0.5);
       border-radius: 15px;
       text-align: center;
       position: relative;
       margin-bottom: 10px;
     }
     .box::before {
-      content: "";
+      content: '';
       position: absolute;
       height: 110%;
       width: 110%;
@@ -81,10 +84,10 @@
       width: 50%;
       text-align: center;
       font-size: 28px;
-      font-family: "Nunito", sans-serif;
+      font-family: 'Nunito', sans-serif;
     }
     button#calculate {
-      font-family: "Nunito", sans-serif;
+      font-family: 'Nunito', sans-serif;
       color: #fff;
       background: #4f7df9;
       font-size: 16px;
@@ -118,8 +121,11 @@
       margin-bottom: 25px;
     }
     #comment {
-      color: #4f7df9;
+      color: #eaeaea;
       font-weight: 800;
+    }
+    .workout-plan {
+      width: 800px;
     }
   </style>
   <body>
@@ -148,7 +154,7 @@
     <!--background-->
 
     <div class="banner">
-      <img src="foto/logo1.webp" class="banner" />
+      <!-- <img src="foto/logo1.webp" class="banner" /> -->
       <div class="container">
         <div class="box">
           <h1>DAILY CALORIC INTAKE CALCULATOR</h1>
@@ -165,11 +171,18 @@
           </div>
           <div class="result">
             <p>Your BMI is</p>
-            <div id="result">00.00</div>
-            <p class="comment"></p>
+            <div type="number" id="result">00.00</div>
+            <p id="comment" class="comment"></p>
+            <img src="assets/img/extreme-over-wp.png" alt="" class="workout-plan" id="extreme-over-wp" style="display: none" />
+            <img src="assets/img/normal-wp.png" alt="" class="workout-plan" id="normal-wp" style="display: none" />
+            <img src="assets/img/ob-i-wp.png" alt="" class="workout-plan" id="ob-i-wp" style="display: none" />
+            <img src="assets/img/ob-ii-wp.png" alt="" class="workout-plan" id="ob-ii-wp" style="display: none" />
+            <img src="assets/img/overweight-wp.png" alt="" class="workout-plan" id="overweight-wp" style="display: none" />
+            <img src="assets/img/under-wp.png" alt="" class="workout-plan" id="under-wp" style="display: none" />
           </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
